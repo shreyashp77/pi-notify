@@ -1,0 +1,14 @@
+{
+  "name": "@shreyashp7/pi-notify",
+  "version": "0.1.0",
+  "description": "pi extension: desktop notification when the agent finishes (Linux, notify-send + xdotool focus gate)",
+  "license": "MIT",
+  "keywords": ["pi-package", "pi-extension", "notifications"],
+  "files": ["extensions"],
+  "pi": {
+    "extensions": ["./extensions"]
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*"
+  }
+}
