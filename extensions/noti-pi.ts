@@ -1,4 +1,4 @@
-// pi-notify — desktop notification when the agent finishes (Linux).
+// noti-pi — desktop notification when the agent finishes (Linux).
 // Toast via notify-send; focus gate via xdotool (X11 only). No npm deps.
 import type { ExtensionAPI } from "@earendil-works/pi-coding-agent";
 import { CONFIG_DIR_NAME } from "@earendil-works/pi-coding-agent";
@@ -9,7 +9,7 @@ import { join } from "node:path";
 const DEFAULTS = {
   enabled: true,
   onlyWhenFocusLost: true,
-  title: "pi-notify",
+  title: "noti-pi",
   bodyTemplate: "",
   cooldownMs: 1500,
 };
@@ -26,7 +26,7 @@ export default function (pi: ExtensionAPI) {
     Object.assign(cfg, readEnv());
     // Project config only if trusted; never throw.
     if (ctx.isProjectTrusted()) {
-      const path = join(ctx.cwd, CONFIG_DIR_NAME, "extensions", "pi-notify", "config.json");
+      const path = join(ctx.cwd, CONFIG_DIR_NAME, "extensions", "noti-pi", "config.json");
       if (existsSync(path)) {
         try {
           const data = JSON.parse(await readFile(path, "utf8"));

@@ -1,4 +1,4 @@
-# pi-notify
+# noti-pi
 
 pi extension: fire a desktop notification the moment the agent finishes.
 Built for: *ask a question → agent works a while → you switch windows →
@@ -11,7 +11,7 @@ inline-only notification if they are missing).
 ## Install
 
 ```bash
-pi install npm:@shreyashp7/pi-notify
+pi install npm:@shreyashp7/noti-pi
 ```
 
 ## How it works
@@ -26,14 +26,14 @@ pi install npm:@shreyashp7/pi-notify
 
 ## Config
 
-Env vars (first) or `.pi/extensions/pi-notify/config.json` (project file,
+Env vars (first) or `.pi/extensions/noti-pi/config.json` (project file,
 read only when the project is trusted):
 
 | Key | Env | Default | Meaning |
 |-----|-----|---------|---------|
 | `enabled` | `PI_NOTIFY_ENABLED` | `true` | master switch |
 | `onlyWhenFocusLost` | `PI_NOTIFY_ONLY_FOCUS_LOST` | `true` | skip if terminal focused |
-| `title` | `PI_NOTIFY_TITLE` | `pi-notify` | toast title |
+| `title` | `PI_NOTIFY_TITLE` | `noti-pi` | toast title |
 | `bodyTemplate` | `PI_NOTIFY_BODY` | auto | body override |
 | `cooldownMs` | `PI_NOTIFY_COOLDOWN` | `1500` | min ms between toasts |
 

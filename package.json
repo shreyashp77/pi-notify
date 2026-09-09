@@ -1,5 +1,5 @@
 {
-  "name": "@shreyashp7/pi-notify",
+  "name": "@shreyashp7/noti-pi",
   "version": "0.1.0",
   "description": "pi extension: desktop notification when the agent finishes (Linux, notify-send + xdotool focus gate)",
   "license": "MIT",
