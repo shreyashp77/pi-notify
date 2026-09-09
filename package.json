@@ -5,6 +5,7 @@
   "license": "MIT",
   "keywords": ["pi-package", "pi-extension", "notifications"],
   "files": ["extensions"],
+  "publishConfig": { "access": "public" },
   "pi": {
     "extensions": ["./extensions"]
   },
